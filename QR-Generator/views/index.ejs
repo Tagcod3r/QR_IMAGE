@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" href="/icon.w" type="image/x-icon">
+</head>
+<body>
+    <h1 class="typewriter"; style="color: black;">CONVERT YOUR URL TO QR!</h1>
+    <div class="container">
+        <h2>Enter the URL</h2>
+        <form method="POST" action="/generate">
+            <input type="text" name="url" placeholder="Enter URL here" required autofocus>
+            <input type="submit" value="Generate QR Code">
+        </form>
+    </div>
+     
+    <div class="container2" style="display: none;">
+        <div class="qrimage"> </div>
+        <button onclick="download()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="34px" fill="#e8eaed">
+                <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        function download() { 
+            const link = document.createElement('a');
+            link.href = '/download-qr'; 
+            link.download = 'qrimage.png'; 
+            link.click();
+            
+            setTimeout(function() {
+                document.querySelector('.container').style.display='flex';
+                document.querySelector('.container2').style.display='none';
+                document.querySelector('.typewriter').style.opacity='1';
+            }, 4000);
+        } 
+    </script>
+    <% if(flag==1) {%>
+    <% if (valid !== true ) { %>
+        <script>alert("<%= alertmessage %>");</script>
+    <% } else { %>
+        <script>
+            const container2 = document.querySelector('.container2');
+            const container = document.querySelector('.container');
+            document.querySelector('.typewriter').style.opacity='0';
+            container.style.display = 'none';
+            container2.style.display = 'flex';
+            
+            document.querySelector('.qrimage').style.backgroundImage = 'url("/qr_image.png")';
+
+            alert('You have got only 5 seconds to download the file');
+            setTimeout(function() {
+                container.style.display='flex';
+                container2.style.display='none';
+                document.querySelector('.typewriter').style.opacity='1';
+            }, 4000);
+        </script>
+    <% } }%>
+</body>
+</html>
