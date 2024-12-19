@@ -58,7 +58,7 @@ app.post('/generate', (req, res) => {
                     console.log('QR image deleted successfully after timeout');
                 }
             });
-        }, 4000);
+        }, 5000);
         res.redirect('/qr-success');
     } catch (err) {
         console.error('Error generating QR code:', err);
