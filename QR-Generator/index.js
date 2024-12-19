@@ -8,7 +8,7 @@ import fs from 'fs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
-const port = process.env.port||3000;
+const port = 3000;
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'Views'));
@@ -58,7 +58,7 @@ app.post('/generate', (req, res) => {
                     console.log('QR image deleted successfully after timeout');
                 }
             });
-        }, 100);
+        }, 4000);
         res.redirect('/qr-success');
     } catch (err) {
         console.error('Error generating QR code:', err);
