@@ -8,6 +8,9 @@
     <link rel="icon" href="/icon1.jpg" type="image/x-icon">
 </head>
 <body>
+ <div id="loading-screen">
+        <div id="loading-circle"></div>
+    </div>
     <h1 class="typewriter"; style="color: black;">CONVERT YOUR URL TO QR!</h1>
     <div class="container">
         <h2>Enter the URL</h2>
@@ -61,5 +64,12 @@
             }, 4000);
         </script>
     <% } }%>
+<script>
+        window.onload = function()
+        {
+        const loadingScreen = document.getElementById('loading-screen');
+        loadingScreen.style.display = 'none';
+        };
+    </script>
 </body>
 </html>
