@@ -31,7 +31,6 @@ body {
     opacity: 1;
 }
 
-/* Mobile-First */
 .container, .container2 {
     display: flex;
     justify-content: center;
