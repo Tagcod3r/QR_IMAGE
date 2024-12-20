@@ -21,7 +21,7 @@ body {
     font-family: "Playwrite NL Guides", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1rem;  /* Default smaller size for mobile */
+    font-size: 1rem;  
     color: black;
     overflow: hidden;
     width: 100%;
@@ -152,5 +152,50 @@ button:hover {
 @media (min-width: 768px) {
     .typewriter {
         font-size: 2rem;  
+    }
+}
+
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loading-circle {
+    width: 10vw; 
+    height: 10vw; 
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid #3498db; 
+    border-radius: 50%; 
+    animation: spin 1s linear infinite; 
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+@media (max-width: 600px) {
+    #loading-circle {
+        width: 8vw; 
+        height: 8vw; 
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    #loading-circle {
+        width: 12vw;
+        height: 12vw; 
     }
 }
