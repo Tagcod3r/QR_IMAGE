@@ -13,7 +13,26 @@ This is a simple web application that allows users to generate a QR code from a 
 - **EJS (for templating)**
 - **qr-image (for generating QR codes)**
 - **body-parser (for parsing POST request data)**
+## Preview
 
+- **Here is a preview of the game's frontend. The layout and user interface display the country and its corresponding capital for the user to guess.**
+ 
+  - **Front-End**
+
+  ![Screenshot 2024-12-11 192835](https://github.com/user-attachments/assets/7095eb08-5e2d-4c86-bc3f-f83dea90cdd8)
+  
+  - **Score updation**
+
+  ![Screenshot 2024-12-11 193232](https://github.com/user-attachments/assets/ab361c55-f3dc-45ef-9c82-e75162a1c9ff)
+  ![copy](https://github.com/user-attachments/assets/c7156972-c5d5-4b4c-a8d5-565c3ebb133e)
+  
+  - **Alert Message**
+
+  ![Screenshot 2024-12-11 193310](https://github.com/user-attachments/assets/878832d4-77d5-4802-bb2f-025bade69410)
+
+## Play the Game
+
+You can try out the game here: [Map It Right Live](https://map-it-right.onrender.com)
 ---
 
 ## Installation
