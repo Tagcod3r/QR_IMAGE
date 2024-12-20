@@ -170,10 +170,10 @@ button:hover {
 }
 
 #loading-circle {
-    width: 10vw; 
-    height: 10vw; 
-    border: 8px solid #f3f3f3; 
-    border-top: 8px solid #3498db; 
+    width: 6vw; 
+    height: 6vw; 
+    border: 4px solid #f3f3f3; 
+    border-top: 4px solid #3498db; 
     border-radius: 50%; 
     animation: spin 1s linear infinite; 
 }
@@ -187,15 +187,15 @@ button:hover {
 
 @media (max-width: 600px) {
     #loading-circle {
-        width: 8vw; 
-        height: 8vw; 
+        width: 6vw; 
+        height: 6vw; 
     }
 }
 
 
 @media (min-width: 601px) and (max-width: 1024px) {
     #loading-circle {
-        width: 12vw;
-        height: 12vw; 
+        width: 8vw;
+        height: 8vw; 
     }
 }
