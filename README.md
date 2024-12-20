@@ -19,17 +19,16 @@ This is a simple web application that allows users to generate a QR code from a 
 - **Here is a preview of the page's frontend. The layout and user interface display the area where the user can enter their URL and it redirects to the QR image.**
  
   - **Front-End**
-
-  ![Screenshot 2024-12-11 192835](https://github.com/user-attachments/assets/7095eb08-5e2d-4c86-bc3f-f83dea90cdd8)
+![IMG_20241220_105253](https://github.com/user-attachments/assets/45d9c443-eea1-4c29-bf9d-8ccd76c4c53b)
+![IMG_20241220_105231](https://github.com/user-attachments/assets/453fa19e-8787-4d85-b099-3b4f7db3e864)
   
   - **QR-Image and Download option**
 
-  ![Screenshot 2024-12-11 193232](https://github.com/user-attachments/assets/ab361c55-f3dc-45ef-9c82-e75162a1c9ff)
-  ![copy](https://github.com/user-attachments/assets/c7156972-c5d5-4b4c-a8d5-565c3ebb133e)
+     ![IMG_20241220_105202](https://github.com/user-attachments/assets/e8268bb2-aa89-4c63-a787-c67426115909)
   
   - **Alert Message**
 
-  ![Screenshot 2024-12-11 193310](https://github.com/user-attachments/assets/878832d4-77d5-4802-bb2f-025bade69410)
+![IMG_20241220_105218](https://github.com/user-attachments/assets/94925029-d877-4398-b42d-5aecae018b50))
 
 ## Generate Your QR
 
