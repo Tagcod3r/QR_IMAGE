@@ -15,14 +15,28 @@ body {
 }
 
 .typewriter {
-    font-family: "Playwrite NL Guides", serif;
-    font-size: 1rem;
-    color: black;
-    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #2C3E50;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    overflow: hidden; 
     white-space: nowrap;
     display: inline-block;
     opacity: 1;
+    animation: typing 3.5s steps(30) 1s 1 normal both;
 }
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
 
 .container, .container2 {
     display: flex;
