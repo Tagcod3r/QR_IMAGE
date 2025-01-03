@@ -11,10 +11,13 @@ body {
 
 .typewriter {
     font-family: 'Poppins', sans-serif;
-    font-size: 4rem; font-weight: 600; color: #2C3E50;
-    letter-spacing: 0.1em; text-transform: uppercase; overflow: hidden;
-    white-space: nowrap; display: inline-block; opacity: 1;
-    animation: typing 3.5s steps(30) 1s normal both; max-width: 100%;
+    font-size: 6vw; /* Make it scalable with viewport width */
+    font-weight: 600; color: #2C3E50;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    overflow: hidden; white-space: nowrap;
+    display: inline-block; opacity: 1;
+    animation: typing 3.5s steps(30) 1s normal both;
+    max-width: 100%;
 }
 
 @keyframes typing {
@@ -22,10 +25,24 @@ body {
     to { width: 100%; }
 }
 
-@media (max-width: 1200px) { .typewriter { font-size: 3rem; } }
-@media (max-width: 768px) { .typewriter { font-size: 2.5rem; } }
-@media (max-width: 480px) { .typewriter { font-size: 2rem; } }
-@media (max-width: 320px) { .typewriter { font-size: 1.5rem; } }
+@media (max-width: 1200px) { 
+    .typewriter { font-size: 8vw; } /* Responsive font size for medium screens */
+}
+
+@media (max-width: 768px) { 
+    .typewriter { font-size: 10vw; } /* Larger font size for tablets */
+}
+
+@media (max-width: 630px) { 
+    .typewriter {
+        font-size: 12vw; /* Adjusts text size at smaller sizes */
+        white-space: normal; /* Allow text to wrap to avoid overflow */
+    }
+}
+
+@media (max-width: 480px) { 
+    .typewriter { font-size: 14vw; } /* Further adjusts for very small screens */
+}
 
 .container, .container2 {
     display: flex; justify-content: center; align-items: center;
